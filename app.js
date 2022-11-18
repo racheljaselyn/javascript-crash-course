@@ -80,8 +80,7 @@ let arr = [20, 30, 40, 50, 100]
 // console.log(arr)
 
 let newArr = arr.filter((element) => {
-if (element < 50)
-return true
+return element < 50
 })
 
 console.log(newArr)
