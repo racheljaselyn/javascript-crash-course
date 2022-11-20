@@ -5,7 +5,7 @@
 // console.log(newArray)
 
 // cents with MAP method
-let dollars = [1, 3, 5, 10]
+let dollars = [1, 3, 5]
 // let cents = []
 
 let cents = dollars.map(element => element * 100)
