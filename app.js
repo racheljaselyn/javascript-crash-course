@@ -11,7 +11,7 @@ let users = [
     username: "abbie",
     email: "abby@gmail.com",
     password: "gabby",
-    subscriptionStatus: "VIP",
+    subscriptionStatus: "standard",
     discordId: "123abby",
     lessonsCompleted: [0, 1, 2],
   },
