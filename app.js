@@ -1,21 +1,55 @@
-// let arr = [1, 4, 9, 16]
+let users = [
+  {
+    email: "rachel@gmail.com",
+    password: "dexter",
+    username: "rachel",
+    subscriptionStatus: "VIP",
+    discordId: "123rachel",
+    lessonsCompleted: [0, 1, 2, 3],
+  },
+  {
+    username: "abbie",
+    email: "abby@gmail.com",
+    password: "gabby",
+    subscriptionStatus: "VIP",
+    discordId: "123abby",
+    lessonsCompleted: [0, 1, 2],
+  },
+];
 
-// let newArray = arr.map(element => return undefined)
+function login(email, password) {
+  for (let i = 0; i < users.length; ++i) {
+    if (users[i].email === email) {
+      console.log(users[i]);
+      if (users[i.password === password]) {
+        console.log("log the user in - the details are correct");
+      } else {
+        console.log("password is incorrect - Try again");
+      }
+    }
+  }
+}
 
-// console.log(newArray)
+login("rachel@gmail.com", "dexter", "rachel", "VIP", "123rachel", [0, 1, 2, 3]);
 
-// cents with MAP method
-let dollars = [1, 3, 5]
-// let cents = []
+// - Create a register function that accepts: username, email etc..
 
-let cents = dollars.map(element => element * 100)
+// - Inside your register function create a user Object,
+// and push this user object onto the 'users' array
 
-console.log(cents)
+function register(user) {
+users.push(user);
+}
 
+register({
+    email: "rachel@gmail.com",
+    password: "dexter",
+    username: "rachel",
+    subscriptionStatus:"VIP",
+    discordId: "123rachel",
+    lessonsCompleted: [0, 1, 2, 3]
+});
 
-// // cents with FOR and PUSH
-// for (let i = 0; i < dollars.length; ++i) {
-// cents.push(dollars[i] * 100)
-// }
+// log the new user in
 
-// console.log(cents)
+console.log(users);
