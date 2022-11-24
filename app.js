@@ -47,7 +47,7 @@ register({
     username: "rachel",
     subscriptionStatus:"VIP",
     discordId: "123rachel",
-    lessonsCompleted: [0, 1, 2, 3]
+    lessonsCompleted: [0, 1, 2, 3, 4]
 });
 
 // log the new user in
